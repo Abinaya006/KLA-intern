@@ -112,7 +112,7 @@ with open('Source.txt','r') as infile, open('file2.txt', 'w') as outfile:
             cc2=math.dist(rr1,ss1)
             cc3=math.dist(tt1,uu1)
             
-            if(math.isclose(c1,cc2)==True or math.isclose(c1,cc1)==True or math.isclose(c2,cc3)==True or math.isclose(c1,cc3)==True or math.isclose(c2,cc2)==False or   math.isclose(c3,cc2)==True or  math.isclose(c3,cc1)==True or math.isclose(c3,cc3)==True):
+            if(c1==cc1 or c1==cc2 or c1==cc3  or c2==cc2 or c2 ==cc3 or c2==cc1 or c3==cc3 or c3==cc2 or c3==cc1 ):
                 res.write("boundary\n")
                 for i in l_new:
                     res.write(i+"\n")
